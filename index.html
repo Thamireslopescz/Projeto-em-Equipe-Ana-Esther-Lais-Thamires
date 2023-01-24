@@ -10,10 +10,10 @@
 </head>
 
 <body>
-    <div class="container">
-        <header class="containerHeader">
-            <h1 class="titulo">Flex Turismos</h1>
-            <nav class="navegador">
+    <div class="container"> <!-- Engloba todos os elementos do site -->
+        <header class="containerHeader"> <!-- Responsável pelo nosso nav - navegação de páginas -->
+           <h1 class="titulo">Flex Turismos</h1>
+            <nav class="navegador"> 
                 <a class="links" href="#div2">Quem somos</a>
                 <a class="links" href="#div3">Serviços</a>
                 <a class="links" href="#div4">Planos</a>
@@ -21,39 +21,58 @@
         </header>
         <main>
             <div id="div1">
-                <div class="div1 esquerda">
-                    <h1>Flex Turismos</h1>
-                    <p>O melhor serviço para você</p>
-                    <button class="botao">Saiba Mais</button>
+                <div>
+                    <h1>Flex <br>
+                    Turismos</h1>
+                    <p class="font">O melhor serviço para você</p>
+                    <button class="botao cursosPointer">Saiba Mais</button>
                 </div>
-                <div class="div1 img">
+                <div>
                     <img class="imagemDiv1" src="img/malas e avião.png" alt="desenho-celular-viagem-pessoa-mala">
                 </div>
             </div>
             <div id="div2">
-                <h2>Quem somos?</h2>
-                <img class="imagemDiv2" src="img/viagem.png" alt="pessoas-com-malas">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt perspiciatis neque pariatur,
-                    illo saepe blanditiis quis molestias, temporibus minus deserunt maiores ab quasi
+                <div class="esquerda">
+                    <img class="imagemDiv2" src="img/viagem.png" alt="pessoas-com-malas">
+                </div>
+                
+                <div class="direita">
+                    <h2 class="subtitulo"> | Quem somos?</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt perspiciatis
+                    illo saepe blanditiis quis 
+                    molestias, temporibus minus deserunt maiores ab quasi
+                    sit dignissimos modi 
+                    laudantium! Ab, assumenda sit.
+                    Lorem ipsum dolor sit amet consectetur 
+                    adipisicing elit. Incidunt perspiciatis 
+                    illo saepe blanditiis quis molestias, 
+                    temporibus minus deserunt maiores ab quasi
+                    sit dignissimos modi 
+                    laudantium! Ab, assumenda sit.
+                    Lorem ipsum dolor sit amet consectetur 
+                    adipisicing elit. Incidunt perspiciatis 
+                    illo saepe blanditiis quis molestias, 
+                    temporibus minus deserunt maiores ab quasi
                     sit dignissimos modi laudantium! Ab, assumenda sit.
                 </p>
+                </div>
             </div>
             <div id="div3">
                 <div class="serviços">
                     <h3>Serviços</h3>
                     <p class="hospedagens">Hospedagens</p>
-                    <img clas="hospedagens" src="img/icon-2.png" alt="desenho-de-um-hotel">
-                    <button>Comprar agora</button> 
+                    <img class="hospedagens" src="img/icon-2.png" alt="desenho-de-um-hotel">
+                    <button class="cursosPointer">Comprar agora</button> 
                 </div>
                 <div class="pacotesDeViagens">
                     <p>Pacotes de viagens</p>
                     <img class="pacotesDeViagens" src="img/mundo com avião.png" alt="desenho-de-terra-com-aviao">
-                    <button>Comprar agora</button>
+                    <button class="cursosPointer">Comprar agora</button>
                 </div>
                 <div class="roteirosPersonalizados">
                     <p>Roteiros personalizados</p>
                     <img class="roteirosPersonalizados" src="img/mapa.png" alt="desenho-mapa">
-                    <button>Comprar agora</button>
+                    <button class="cursosPointer">Comprar agora</button>
                 </div>
             </div>
             <div id="div4">
@@ -65,7 +84,7 @@
                         <li>Serviçõs de quarto</li>
                         <li>Guia turisticoh</li>
                     </ul>    
-                    <button>Saiba Mais!</button>
+                    <button class="cursosPointer">Saiba Mais!</button>
                 </div>
                 <div class="plano2">
                     <h4>Plano 2</h4>
@@ -75,7 +94,7 @@
                         <li>Guia turistico</li>
                         <li>Roteiro de trilhas</li>
                     </ul>
-                    <button>Saiba Mais!</button>
+                    <button class="cursosPointer">Saiba Mais!</button>
                 </div>
                 <div class="plano3">
                     <h4>Plano 3</h4>
@@ -87,10 +106,10 @@
                         <li>Serviço personalizado</li>
                         <li>Area vip</li>
                     </ul>
-                    <button>Saiba Mais!</button>
+                    <button class="cursosPointer">Saiba Mais!</button>
                 </div>
             </div>
-            <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+            <button onclick="topFunction()" id="myBtn" title="Go to top"><img class="top" src="./img/istockphoto-1369744738-170667a-removebg-preview (1).png" alt=""></button>
         </main>
         <footer>
             <div class="containerFooter">
