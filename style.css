@@ -1,0 +1,108 @@
+*,
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+        scroll-behavior: smooth;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.containerHeader {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    background-color:  rgb(251, 140, 68);
+    justify-content: space-around;
+}
+
+.links {
+    text-decoration: none;
+    padding: 20px;
+    font-size: 18px;
+    color: black;
+}
+
+.navegador {
+    display: flex;
+}
+
+.imagemDiv1 {
+    display: flex;
+    align-self: flex-end;
+}
+
+#div1 {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+#esquerda{
+    
+}
+.botao{
+    background-color: rgb(31, 69, 131);
+    border-radius: 30px;
+    height: 35px;
+    width: 150px;
+    color: white;
+    border: none;
+    margin: 10px;
+}
+
+#div2 {
+
+    background-color: #fb8c44;
+}
+
+#div3 {
+    background-color: palevioletred;
+    display: flex;
+    flex-direction: row;
+}
+
+#div4 {
+    background-color: yellow;
+}
+
+
+.containerFooter {
+    background-color: rgb(18, 3, 147);
+    display: flex;
+    flex-direction: row;
+    padding: 20px 50px 20px 50px;
+    justify-content: space-around;
+    color: aliceblue;
+}
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #fb8c44; /* Set a background color */
+    color: rgb(255, 255, 255); /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
