@@ -1,235 +1,336 @@
+/* fazer hover botoes */
+
 * {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    width: 100vw;
-    height: 100vh;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    background-color: white;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
 }
 
-
 .containerHeader {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    height: 13vh;
-    background-color: #122a57;
-    justify-content: space-around;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  height: 13vh;
+  background-color: #122a57;
+  justify-content: space-around;
 }
 
 .navegador {
-    display: flex;
+  display: flex;
 }
 
 .titulo {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: white;
-    font-size: 40px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  font-size: 40px;
+}
+
+.animated-word {
+  font-family: Helvetica;
+  font-weight: 200;
+  font-size: 40px;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+  max-width: 300px; 
+  width: 50%; 
+  transition: all 600ms cubic-bezier(0.2, 0, 0, 0.8);
+}
+
+.animated-word:hover {
+  color: rgba(71, 126, 232, 0.7);
 }
 
 .links {
-    text-decoration: none;
-    padding: 20px;
-    font-size: 18px;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    cursor: pointer;
+text-decoration: none;
+  padding: 20px;
+  font-size: 18px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
 }
 
-
 #div1 {
-    padding-top: 160px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    color: #122a57;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 30px;
+  padding-top: 160px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  color: #122a57;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 30px;
 }
 
 .font {
-    font-size: 15px;
-    color: black;
+  font-size: 15px;
+  color: black;
 }
 
 .botao {
-    background-color: #1f4583;
-    border-radius: 30px;
-    height: 43px;
-    width: 190px;
-    color: white;
-    border: none;
-    margin: 10px;
-}
-
-.cursosPointer {
-    cursor: pointer;
-}
-
-
-.imagemDiv1 {
-    display: flex;
-    align-self: flex-end;
-}
-.tituloH1{
-    padding-left: 100px;
-}
-
-#div2 {
-    padding: 60px 0px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    
-}
-
-.esquerda {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding-right: 50px;
-    justify-content: space-around;
-
-}
-
-.imagemDiv2 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    height: 45vh;
-    padding-left: 200px
-
-}
-
-.direita {
-    display: flex;
-    flex-direction: column;
-    width: 40%;
-    height: 210px;
-    margin-top: 100px;
-}
-
-.subtitulo {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #122a57;
-    font-size: 40px;
-    padding-right: 15px;
-    overflow-y: hidden;
-}
-
-#div3 {
-    background-color: #122a57;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 25px;
-    padding: 100px;
-}
-
-.servicos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: white;
+  background-color: #1f4583;
+  border-radius: 30px;
+  height: 43px;
+  width: 190px;
+  color: white;
+  border: none;
+  margin: 10px;
+  animation: button-animate 3s ease-in;
 }
 
 .cursorPointer {
-    cursor: pointer;
-    height: 45px;
-    width: 150px;
-    border-radius: 20px;
-    background-color:white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    border-style: none;
+  cursor: pointer;
 }
 
-.serv{
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 20px;
+.imagemDiv1 {
+  display: flex;
+  align-self: flex-end;
+}
+.tituloH1 {
+  padding-left: 100px;
+}
+
+#div2 {
+  padding: 60px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.esquerda {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-right: 50px;
+  justify-content: space-around;
+}
+
+.imagemDiv2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 45vh;
+  padding-left: 200px;
+}
+
+.direita {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: 210px;
+  margin-top: 100px;
+}
+
+.subtitulo {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  height: 70px;
+  color: #122a57;
+  font-size: 40px;
+  padding-right: 15px;
+  overflow-y: hidden;
+}
+
+#div3 {
+  background-color: #122a57;
+  display: flex;
+  justify-content: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 25px;
+  height: 550px;
+  flex-direction: column;
+}
+
+.servicos {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: 0px 100px;
+  align-items: center;
+}
+
+.cursorPointer {
+  cursor: pointer;
+  height: 45px;
+  width: 150px;
+  border-radius: 20px;
+  background-color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border-style: none;
+}
+
+.butaoServicos {
+  width: 110px;
+  height: 25px;
+  font-weight: 650;
+  color: #122a57;
+}
+
+.imagensDiv3 {
+  display: flex;
+  align-self: center;
+}
+
+.serv {
     font-size: 35px;
+    color: white;
+    padding-left: 355px;
+    padding-bottom: 25px;
+    align-self: flex-start;
 }
-.textosDiv3{
-    padding: 15px;
-    color:rgb(255, 255, 255);
+
+.textosDiv3 {
+  padding: 15px;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
 }
-.imgDiv3{
-    width: 220px;
-    height: 220px;
+
+.imgDiv3 {
+  display: flex;
+  flex-direction: baseline;
+  width: 200px;
+  height: 200px;
 }
 
 /* Até aqui tudo está verificado */
 
 #div4 {
-    background-color: white;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 25px;
-    padding: 100px;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 25px;
+  padding: 100px;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
 }
 
-.plano1 {
-    display: flex;
-    flex-direction: column;
-    align-items: baseline;
-    gap: 15px;
-    margin: 20px;
-    align-items: center;
-    border: 4px solid #122a57;
-    padding: 50px 55px;
+.tituloPlanos {
+  font-size: 40px;
+  color: black;
+  padding-left: 300px;
+  align-self: flex-start;
 }
 
-.plano2{
-    display: flex;
-    flex-direction: column;
-    align-items: baseline;
-    gap: 15px;
-    margin: 20px;
-    align-items: center;
-    border: 4px solid #122a57;
-    padding: 50px 55px;
+.planos {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
 }
 
-.plano3 {
-    display: flex;
-    flex-direction: column;
-    align-items: baseline;
-    gap: 15px;
-    margin: 20px;
-    align-items: center;
-    border: 4px solid #122a57;
-    padding: 50px 55px;
+hr {
+  height: 3px;
+  background-color: #122a57;
+  width: 180px;
+  border-radius: 15px;
 }
 
-.saibaMais{
-    background-color:#122a57;
-    color: aliceblue;
-    border-radius: 25px;
+.plano1, .plano2, .plano3 {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  gap: 15px;
+  margin: 20px;
+  align-items: center;
+  border: 5px solid #122a57;
+  padding: 30px 15px;
 }
 
+ul {
+  list-style-type: square; 
+}
+
+li {
+  font-size: 15px;
+}
+
+li::marker {
+   font-size: 20px;
+  color: #122a57;
+}
+
+
+.saibaMais {
+  background-color: #122a57;
+  width: 220px;
+  color: aliceblue;
+  border-radius: 25px;
+}
 
 .containerFooter {
-    background-color: #122a57;
-    display: flex;
-    flex-direction: row;
-    padding: 20px 50px 20px 50px;
-    justify-content: space-around;
-    color: aliceblue;
+  background-color: #122a57;
+  display: flex;
+  flex-direction: row;
+  padding: 20px 50px 20px 50px;
+  justify-content: space-around;
+  color: aliceblue;
 }
+
+.font {
+  color: black;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  margin: 10px 0 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 30em;
+  animation: type 4s steps(60,end);
+}
+
+@keyframes button-animate {
+  from {
+    opacity: 0;
+    
+  }
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes type {
+  from {
+    width: 0;
+  }
+}
+  
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #ff6912; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 50px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
+
+  .top {
+    width: 40px;
+    height: 40px;
+  }
+
+
+
